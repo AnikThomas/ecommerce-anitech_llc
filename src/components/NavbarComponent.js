@@ -7,7 +7,7 @@ const Navbar = () =>{
             <div className="container">
                 <a className="navbar-brand" href="index.html"><img className="logo" src={logo} alt="logo"/></a>
                 <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <ul className="navbar-nav ml-auto">
