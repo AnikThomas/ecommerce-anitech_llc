@@ -8,23 +8,24 @@ export const ITEMS = [
       key:1,
       altText: "Slide 1",
       caption: "FEATURED PRODUCT",
-      header: "SHOP INDUSTRIAL INSTRUMENTS & SUPPLIES"
-      
+      header: "SHOP INDUSTRIAL INSTRUMENTS & SUPPLIES."
     },
     {
       src: img2,
       key:2,
       altText: "Slide 2",
-      caption: "EXPERT SERVICES",
-      header: "SERVICES OIL AND GAS INSTRUMENTS"
+      caption: "OUR EXPERT",
+      header: "SERVICES AND SUPPLY INDUSTRIAL PRODUCTS FOR OIL & GAS",
+      
       
     },
     {
       src: img3,
       key:3,
       altText: "Slide 3",
-      caption: "ABOUT US",
-      header: "Through our network. A million-plus products in the palm of your hand.We can supply it."
+      caption: "CONTACT US",
+      header: "THROUGH OUR NETWORK. A MILLION PLUS PRODUCTS IN THE PALM OF YOUR HAND.",
+      
       
     }
   ];

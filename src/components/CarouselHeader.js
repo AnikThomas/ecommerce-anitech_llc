@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import { Carousel,CarouselItem,CarouselControl,CarouselIndicators,CarouselCaption } from 'reactstrap';
+import { Carousel,CarouselItem,CarouselControl,CarouselIndicators,CarouselCaption, } from 'reactstrap';
 import { ITEMS } from '../shared/carousel_items';
 
 
@@ -49,8 +49,8 @@ class CarouselHeader extends Component {
                         onExiting={this.onExiting}
                         onExited={this.onExited}
                         key={item.src}>
-                    <img className="d-block w-100" src={item.src} alt={""}/>
-                    <CarouselCaption className="carouselCaption" captionText={item.caption} captionHeader={item.header} />
+                        <img className="d-block carouselItem" src={item.src} alt={""} style={{width: "100%" ,position:"center"}}/>  
+                    <CarouselCaption className="carouselCaption" captionText={item.caption} captionHeader={item.header}/>
                 </CarouselItem>
             );
           });
@@ -70,5 +70,6 @@ class CarouselHeader extends Component {
   }
 }
 
+
+
 export default CarouselHeader;
-    

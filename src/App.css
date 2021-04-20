@@ -2,11 +2,13 @@
 :root{
     --primary-white: #fff;
     --primary-red: #f00;
-    --primary-dark:rgba(0, 0, 0, 0.5);  
+    --primary-dark:rgba(0, 0, 0, 0.6);  
    }
 
 body{
     font-family: "Open Sans", sans-serif;
+    background-color: black;
+  
 }
 .card-title{
     font: 500 1.25rem "roboto",lato;
@@ -36,15 +38,37 @@ body{
     transition: border 0.1s; 
 }
 /* CAROUSEL */
-
-.carousel-item, .carousel-item.active {
-    align-items:center;
-    height: 28.125rem;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;     
-}
 .carouselCaption{
     background: var(--primary-dark);
+    
+    padding: 3rem;
+    font-weight: 400; 
+    font-size: 2.5rem;   
+}
+.carouselItem{
+    height:30rem; 
+}
+/* Home page */
+.jumbo{
+    background-color: rgba(0,0,0,0.9)!important;
+    color: var(--primary-white) !important; 
+}
+.jumbo2, .jumbo3{
+    background-color: var(--primary-white)!important;;
+}
+/* .product{
+    background-color: rgba(0,0,0,0.9)!important;
+} */
+.slick-slide{
+    margin: 0 0.60rem;
+}
+.slick-list{
+    margin: 0;   
+}
+.slick-list *:focus{
+    outline: none; 
+}
+footer{
+    background-color: rgba(0,0,0,0.9)!important;
+    color: var(--primary-white) !important;
 }

@@ -22,7 +22,7 @@ function ProductsList(props) {
             );
         });
         return (
-            <div className="container">
+            <div className="container product text-center">
                 <div className="row">
                     {product}
                 </div> 
