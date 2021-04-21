@@ -53,7 +53,7 @@ body{
     background-color: rgba(0,0,0,0.9)!important;
     color: var(--primary-white) !important; 
 }
-.jumbo2, .jumbo3{
+.jumbo2, .jumbo3, .jumbo4{
     background-color: var(--primary-white)!important;;
 }
 /* .product{
@@ -69,6 +69,11 @@ body{
     outline: none; 
 }
 footer{
-    background-color: rgba(0,0,0,0.9)!important;
+    background: url("./components/assets/images/services.jpg");
     color: var(--primary-white) !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
 }

@@ -57,7 +57,7 @@ const brands = [
         centerPadding: '5rem'
         };
         return(
-            <Jumbotron className="jumbo3">
+            <Jumbotron Fluid className="jumbo3">
                 <h2 className="text-center mb-5 display-4">Our Brands</h2>
                 <Slider {... settings}>
                 {brands.map((x, i)=>{
