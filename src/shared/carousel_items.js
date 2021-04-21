@@ -15,17 +15,13 @@ export const ITEMS = [
       key:2,
       altText: "Slide 2",
       caption: "OUR EXPERT",
-      header: "SERVICES AND SUPPLY INDUSTRIAL PRODUCTS FOR OIL & GAS",
-      
-      
+      header: "SERVICES AND SUPPLY INDUSTRIAL PRODUCTS FOR OIL & GAS", 
     },
     {
       src: img3,
       key:3,
       altText: "Slide 3",
       caption: "CONTACT US",
-      header: "THROUGH OUR NETWORK. A MILLION PLUS PRODUCTS IN THE PALM OF YOUR HAND.",
-      
-      
+      header: "THROUGH OUR NETWORK. A MILLION PLUS PRODUCTS IN THE PALM OF YOUR HAND.",  
     }
   ];
