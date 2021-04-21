@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Navbar from './NavbarComponent';
+import NavbarComponent from './NavbarComponent';
 import Footer from './FooterComponent';
 import CarouselHeader from './CarouselHeader'
 import ProductsList from './ProductsListComponent';
-import CategoryInfo from './CategoryInfoComponent';
+// import CategoryInfo from './CategoryInfoComponent';
 import HomeIcon from './HomeIcons';
 import HomeService from './HomeService';
 import BrandSlider from './HomeBrandSlider';
 import HomeOffer from './HomeOffer';
+import Home from './HomeComponent';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { PRODUCTS } from '../shared/product_array';
 
 
@@ -16,23 +18,30 @@ class Main extends Component{
     super(props);
     this.state = {
       products: PRODUCTS,
-      selectedProduct: null,
+      
     };
   }
-  onProductSelect(productId){
-    this.setState({selectedProduct: productId});
-}
+  
   render(){
+    const HomePage = () =>{
+      return(
+        <Home />
+      );
+    }
     return(
       <div>
-        <Navbar/>
+        <NavbarComponent/>
+        <Switch>
         <CarouselHeader/>
         <HomeIcon/>
         <HomeService/>
         <BrandSlider/>
         <HomeOffer/>
-        <ProductsList products={this.state.products} onClick={productId => this.onProductSelect(productId)}/>
-        <CategoryInfo product={this.state.products.filter(product =>product.id===this.state.selectedProduct)[0]}/>
+        
+        <Route path='/home' component={HomePage} />
+        <Route exact path='/productlist' render={() => <ProductsList products={this.state.products} />} />
+        <Redirect to='/home'/>
+        </Switch>
         <Footer/>
       </div>
     )

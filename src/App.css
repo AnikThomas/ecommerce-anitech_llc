@@ -40,13 +40,13 @@ body{
 /* CAROUSEL */
 .carouselCaption{
     background: var(--primary-dark);
-    
-    padding: 3rem;
+    padding: 2rem;
     font-weight: 400; 
-    font-size: 2.5rem;   
+    font-size: 2.5rem;  
 }
 .carouselItem{
-    height:30rem; 
+    height:28rem;
+    
 }
 /* Home page */
 .jumbo{
@@ -60,7 +60,8 @@ body{
     background-color: rgba(0,0,0,0.9)!important;
 } */
 .slick-slide{
-    margin: 0 0.60rem;
+    margin: 0 0.20rem;
+    
 }
 .slick-list{
     margin: 0;   

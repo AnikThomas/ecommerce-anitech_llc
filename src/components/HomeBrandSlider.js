@@ -54,20 +54,22 @@ const brands = [
         slidesToShow: 4,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '5rem'
+        centerPadding: '2.2rem'
         };
         return(
             <Jumbotron fluid className="jumbo3">
-                <h2 className="text-center mb-5 display-4">Our Brands</h2>
-                <Slider {... settings}>
-                {brands.map((x, i)=>{
-                    return (
-                        <div key={i} className="img-card">
-                            <img className="img" src={x.img} alt={""} style={{width:"100%"}}/>
-                        </div>   
-                    )      
-                })}
-                </Slider>
+                <div className="container">
+                    <h2 className="text-center mb-5 display-4">Our Brands</h2>
+                    <Slider {... settings}>
+                    {brands.map((x, i)=>{
+                        return (
+                            <div key={i} className="img-card">
+                                <img className="img" src={x.img} alt={""} style={{width:"65%"}}/>
+                            </div>   
+                        )      
+                    })}
+                    </Slider>
+                </div>
             </Jumbotron>
         );
       }

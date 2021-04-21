@@ -3,7 +3,7 @@ import { Card, CardImg, CardImgOverlay, CardTitle} from 'reactstrap';
 
 function RenderProductItem({product, onClick}){
     return(
-        <Card onClick={()=>onClick(product.id)}>
+        <Card>
             <CardImg width="100%" src={product.image} alt={product.name} />
             <CardImgOverlay>
                 <CardTitle>{product.name}</CardTitle>
@@ -17,7 +17,7 @@ function ProductsList(props) {
         const product = props.products.map(product => {
             return(
                 <div key={product.id} className="col-md-5 m-1">
-                    <RenderProductItem product={product} onClick={props.onClick}/>
+                    <RenderProductItem product={product}/>
                 </div>
             );
         });
