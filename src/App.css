@@ -45,7 +45,7 @@ body{
     font-size: 2.5rem;  
 }
 .carouselItem{
-    height:28rem;
+    height:30rem;
     
 }
 /* Home page */
@@ -70,11 +70,6 @@ body{
     outline: none; 
 }
 footer{
-    background: url("./components/assets/images/services.jpg");
-    color: var(--primary-white) !important;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  
+    /* background: url("./components/assets/images/services.jpg"); */
+    color: var(--primary-white) !important;  
 }

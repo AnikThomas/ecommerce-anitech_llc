@@ -1,13 +1,16 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle} from 'reactstrap';
+import { Link } from 'react-router-dom';
 
-function RenderProductItem({product, onClick}){
+function RenderProductItem({product}){
     return(
         <Card>
-            <CardImg width="100%" src={product.image} alt={product.name} />
-            <CardImgOverlay>
-                <CardTitle>{product.name}</CardTitle>
-            </CardImgOverlay>
+            <Link to={`/productlist/${product.id}`}>
+                <CardImg width="100%" src={product.image} alt={product.name} />
+                <CardImgOverlay>
+                    <CardTitle>{product.name}</CardTitle>
+                </CardImgOverlay>
+            </Link>
         </Card>
     );
 }

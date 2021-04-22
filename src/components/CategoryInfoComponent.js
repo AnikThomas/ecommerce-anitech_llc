@@ -32,7 +32,7 @@ function CategoryInfo(props){
             <div className="container">
                 <div className="row">
                     <RenderProduct product={props.product}/>
-                    <RenderCategory categories={props.product.categories}/>
+                    <RenderCategory categories={props.categories}/>
                 </div>
             </div>   
         );

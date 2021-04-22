@@ -19,9 +19,9 @@ class NavbarComponent extends Component{
     render(){
         return( 
             <React.Fragment>
-                <Navbar dark sticky="top" expand="md">
+                <Navbar dark sticky="/" expand="md" className="text-dark">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img className="logo" src={logo} alt="logo"/></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/home"><img className="logo" src={logo} alt="logo"/></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="ml-auto">
