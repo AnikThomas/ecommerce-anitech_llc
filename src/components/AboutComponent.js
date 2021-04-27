@@ -42,7 +42,7 @@ function About(props){
                             consectetur, quia quos fuga praesentium amet molestiae veniam voluptas beatae ipsum.</p><hr />
                             <Button color="/" className="btn btn-warning mb-2 ml-2 text-dark">Learn More...</Button>
                     </div>
-                    <div class="col-md-6 align-self-center">
+                    <div className="col-md-6 align-self-center">
                             <img src={anitech} className="img-fluid border border-dark mt-4 mb-5" alt="Salt Lake City Office"/>
                     </div> 
                 </div>

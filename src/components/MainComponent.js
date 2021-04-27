@@ -12,7 +12,6 @@ import { CATEGORIES } from '../shared/categories';
 import { FEATURED_PRODUCTS } from '../shared/featured_products';
 
 
-
 class Main extends Component{
   constructor(props){
     super(props);
