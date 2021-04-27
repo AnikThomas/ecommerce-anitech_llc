@@ -38,6 +38,7 @@ function CategoryInfo(props){
                             <div className="row bg-dark p-5">
                                 <RenderProduct product={props.product}/>
                                 <RenderCategory categories={props.categories}/>
+                                
                             </div>
                     </div>
                 
