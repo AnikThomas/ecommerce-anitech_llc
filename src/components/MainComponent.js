@@ -9,8 +9,7 @@ import About from './AboutComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { PRODUCTS } from '../shared/product_array';
 import { CATEGORIES } from '../shared/categories';
-import { PARTNERS } from '../shared/partners';
-import { PROMOTIONS } from '../shared/promotions';
+import { FEATURED_PRODUCTS } from '../shared/featured_products';
 
 
 
@@ -20,8 +19,7 @@ class Main extends Component{
     this.state = {
       products: PRODUCTS,
       categories: CATEGORIES,
-      partners: PARTNERS,
-      promotions: PROMOTIONS  
+      featured_products: FEATURED_PRODUCTS  
     };
   }
   
@@ -30,14 +28,13 @@ class Main extends Component{
       return(
         <Home 
         product={this.state.products.filter(product => product.featured)[0]}
-        promotion={this.state.promotions.filter(promotion =>promotion.featured)[0]}
-        partner={this.state.partners.filter(partner =>partner.featured)[0]}
+        featured_products={this.state.featured_products.filter(featured_product =>featured_product.featured)[0]}
         />
       );
     }
     const ProductWithId = ({match}) =>{
       return(
-        <CategoryInfo product={this.state.products[0]}
+        <CategoryInfo product={this.state.products[match.params.productId]}
         categories={this.state.categories.filter(category => category.productId === +match.params.productId)}
         />
       );
@@ -50,7 +47,7 @@ class Main extends Component{
         <Route exact path='/productlist' render={() => <ProductsList products={this.state.products} />} />
         <Route path='/productlist/:productId' component={ProductWithId} />
         <Route exact path='/contactus' component={Contact}/>
-        <Route exact path='/aboutus' render={()=><About partners={this.state.partners} />} />
+        <Route exact path='/aboutus' render={()=><About featured_products={this.state.featured_products} />} />
 
         <Redirect to='/home'/>
         </Switch>

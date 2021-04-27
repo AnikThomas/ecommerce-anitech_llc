@@ -19,7 +19,7 @@ class NavbarComponent extends Component{
     render(){
         return( 
             <React.Fragment>
-                <Navbar dark sticky="/" expand="md" className="text-dark">
+                <Navbar dark expand="md" className="fixed-top bg-dark">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/home"><img className="logo" src={logo} alt="logo"/></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav}/>

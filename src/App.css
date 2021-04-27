@@ -31,6 +31,7 @@ body{
 
 .navbar .nav-item.active {
     border-left: #444 0.188rem solid; 
+    
 }
 
 .nav-link:hover {
@@ -45,7 +46,7 @@ body{
     font-size: 2.5rem;  
 }
 .carouselItem{
-    height:30rem;
+    height:32rem;
     
 }
 /* Home page */
@@ -69,7 +70,10 @@ body{
 .slick-list *:focus{
     outline: none; 
 }
+
 footer{
     /* background: url("./components/assets/images/services.jpg"); */
     color: var(--primary-white) !important;  
 }
+
+

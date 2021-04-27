@@ -50,7 +50,7 @@ class CarouselHeader extends Component {
                         onExiting={this.onExiting}
                         onExited={this.onExited}
                         key={item.src}>
-                        <div className="container-fluid">
+                        <div>
                             <img className="d-block carouselItem" src={item.src} alt={""} style={{width: "100%"}}/> 
                         </div>
                     <CarouselCaption className="carouselCaption" captionText={item.caption} captionHeader={item.header}/>
