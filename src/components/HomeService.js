@@ -1,6 +1,7 @@
 import React from 'react';
 import { Jumbotron } from 'reactstrap';
 
+
 const HomeService = ()=>{
     return(
         <Jumbotron className="jumbo">
@@ -16,7 +17,6 @@ const HomeService = ()=>{
                             distinctio dignissimos error veritatis
                             vitae et aperiam ex aliquid</p>
                         </div>
-                        
                     </div>
                 </div>
             </div>

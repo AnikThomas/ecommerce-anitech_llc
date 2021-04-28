@@ -115,7 +115,7 @@ export const PRODUCTS = [
     },
     {
         id:14,
-        name:"Regulator high Pressure",
+        name:"R-high Pressure",
         image:"/assets/images/products/Regulator high Pressure.jpeg",
         price: "$1,245.00",
         featured: true,
@@ -131,7 +131,7 @@ export const PRODUCTS = [
     },
     {
         id:16,
-        name:"Level Transmitter Instrument",
+        name:"Level Transmitter",
         image:"/assets/images/products/Level Transmitter Instrument.jpeg",
         price: "$789.00",
         featured: true,
@@ -139,7 +139,7 @@ export const PRODUCTS = [
     },
     {
         id:17,
-        name:"Greyline-pdfm50 Instrument",
+        name:"Greyline Instrument",
         image:"/assets/images/products/Greyline-pdfm50 Instrument.jpeg",
         price: "$1,245.00",
         featured: true,

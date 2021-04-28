@@ -29,8 +29,8 @@ function About(props){
     });
     return(
         <Jumbotron className="bg-light jumbo-about">
-            <div className="container bg-dark mt-5">
-                <div className="row">
+            <div className="container mt-5">
+                <div className="row bg-dark">
                     <div className="col-md-6 sm-4 mt-4">
                         <h2 className="display-4 mt-4 text-white ml-2">About Us</h2>
                         <p className="text-justify text-white ml-2"><span className="font-weight-bold font-italic">Anitech </span>ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus
@@ -39,11 +39,14 @@ function About(props){
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis velit ea amet,ullam totam
                             nulla id itaque eum accusantium ratione doloribus minima.
                             Beatae aliquid id rerum obcaecati eum? Rerum corrupti eaque, cum vitae fugiat error,
-                            consectetur, quia quos fuga praesentium amet molestiae veniam voluptas beatae ipsum.</p><hr />
-                            <Button color="/" className="btn btn-warning mb-2 ml-2 text-dark">Learn More...</Button>
+                            consectetur, quia quos fuga praesentium amet molestiae veniam voluptas beatae ipsum.</p>
+                            <Link to={`/productlist`}><Button color="/" className="btn btn-warning mb-2 ml-2 text-dark border-dark">See Our Products</Button></Link>
                     </div>
                     <div className="col-md-6 align-self-center">
-                            <img src={anitech} className="img-fluid border border-dark mt-4 mb-5" alt="Salt Lake City Office"/>
+                            <figure className="figure">
+                                <img src={anitech} className="img-fluid border border-dark mt-4 mb-2" alt="Salt Lake City Office"/>
+                                <figcaption className="figure-caption text-center text-white font-italic">Anitech Office, SLC</figcaption>
+                            </figure>
                     </div> 
                 </div>
             </div>

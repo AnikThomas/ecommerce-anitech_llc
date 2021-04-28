@@ -8,7 +8,7 @@ function RenderProductItem({product}){
             <Link to={`/productlist/${product.id}`}>
                 <CardImg className="p-4" top width="100%" src={product.image} alt={product.name} />
                 <CardImgOverlay>
-                    <CardTitle>{product.name}</CardTitle>
+                    <CardTitle className="bg-danger">{product.name}</CardTitle>
                 </CardImgOverlay>
             </Link>
         </Card>
