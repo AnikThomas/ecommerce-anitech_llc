@@ -27,7 +27,7 @@ const HomeIcon = (props)=>{
                         </div>
                     </div>
                 </Container>
-                </Jumbotron>
+            </Jumbotron>
     )
 }
 
